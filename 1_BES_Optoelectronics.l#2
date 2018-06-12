@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1144,7 +1144,7 @@ Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
 <wire x1="0.95" y1="0.5" x2="-0.95" y2="0.5" width="0.13" layer="21"/>
 <wire x1="-0.95" y1="0.5" x2="-0.95" y2="-0.5" width="0.13" layer="21"/>
 </package>
-<package name="APA102-2020-TEST">
+<package name="APA102-2020">
 <smd name="VDD" x="-0.7" y="0.8" dx="0.5" dy="0.3" layer="1"/>
 <smd name="SDO" x="-0.7" y="-0.8" dx="0.5" dy="0.3" layer="1"/>
 <smd name="CKO" x="-0.7" y="0" dx="0.5" dy="0.3" layer="1"/>
@@ -2836,7 +2836,7 @@ Viewing Angle	60°</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="2020TEST" package="APA102-2020-TEST">
+<device name="2020" package="APA102-2020">
 <connects>
 <connect gate="G$1" pin="CI" pad="CKI"/>
 <connect gate="G$1" pin="CO" pad="CKO"/>
