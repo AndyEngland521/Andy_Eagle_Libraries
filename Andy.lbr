@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -824,6 +824,16 @@
 <smd name="16" x="4.672" y="-2.194" dx="1.01" dy="1.01" layer="1"/>
 <smd name="17" x="2.386" y="0.092" dx="1.01" dy="1.01" layer="1"/>
 </package>
+<package name="XLR-5">
+<pad name="G" x="-8.25" y="10.17" drill="0.472"/>
+<pad name="2" x="0" y="3.815" drill="0.472" rot="R180"/>
+<pad name="3" x="0" y="0" drill="0.472"/>
+<pad name="4" x="6.98" y="3.815" drill="0.472" rot="R90"/>
+<pad name="P$5" x="3.81" y="8.26" drill="0.63"/>
+<pad name="5" x="3.81" y="0" drill="0.63"/>
+<pad name="1" x="-3.81" y="0" drill="0.63"/>
+<pad name="P$8" x="-3.81" y="13.34" drill="0.63"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FLEX_SENSOR">
@@ -904,6 +914,17 @@
 <pin name="SENSE" x="17.78" y="15.24" length="middle" rot="R180"/>
 <pin name="TRIM" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="GND2" x="17.78" y="-20.32" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XLR-5">
+<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="5.08" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="2.54" length="short" rot="R180"/>
+<pin name="3" x="5.08" y="0" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" length="short" rot="R180"/>
+<pin name="5" x="5.08" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1203,6 +1224,28 @@
 <connect gate="G$1" pin="TRIM" pad="6"/>
 <connect gate="G$1" pin="VIN" pad="2"/>
 <connect gate="G$1" pin="VOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XLR-5">
+<description>&lt;h3&gt;Neutrik XLR-5 Connector - XLR-5 Connector for DMX applications.&lt;/h3&gt;
+&lt;p&gt;This is an XLR-5 Connector, commonly used for DMX512 lighting communication.&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="XLR-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XLR-5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
