@@ -852,7 +852,7 @@
 <package name="SINGLELEDPAD">
 <smd name="P$1" x="0" y="0" dx="0.889" dy="1.905" layer="1" roundness="100" cream="no"/>
 </package>
-<package name="DOUBLELEDPAD">
+<package name="SOLDER_PAD_2">
 <smd name="P$1" x="-1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 <smd name="P$2" x="1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 </package>
@@ -875,7 +875,7 @@
 <package name="CIRCULARPAD">
 <description>LuMini Pad</description>
 <smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
-<smd name="P$2" x="0" y="-0.9525" dx="2.0066" dy="1.905" layer="1"/>
+<smd name="P$2" x="0" y="-0.508" dx="2.0066" dy="1.016" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1377,11 +1377,12 @@ Mouser 568-NC5FBH
 </devices>
 </deviceset>
 <deviceset name="DOUBLE_LED_PAD" prefix="J">
+<description>Solder Pad for LuMini Rings</description>
 <gates>
 <gate name="G$1" symbol="CONN_02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DOUBLELEDPAD">
+<device name="" package="SOLDER_PAD_2">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>

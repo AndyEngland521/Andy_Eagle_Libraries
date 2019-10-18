@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -853,6 +853,12 @@
 <smd name="P$1" x="0" y="0" dx="0.889" dy="1.905" layer="1" roundness="100" cream="no"/>
 </package>
 <package name="SOLDER_PAD_2">
+<description>&lt;h3&gt;LuMini Ring Solder Pads&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: .8 in&lt;/li&gt;
+&lt;li&gt;Area: .4 x 1 in.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <smd name="P$1" x="-1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 <smd name="P$2" x="1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 </package>
@@ -1358,14 +1364,6 @@ Mouser 568-NC5FBH
 <gate name="G$1" symbol="CONN_01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SINGLELEDPAD">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="CIRCULARPAD" package="CIRCULARPAD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1 P$2"/>
@@ -1376,7 +1374,7 @@ Mouser 568-NC5FBH
 </device>
 </devices>
 </deviceset>
-<deviceset name="DOUBLE_LED_PAD" prefix="J">
+<deviceset name="SOLDER_PAD_2" prefix="J">
 <description>Solder Pad for LuMini Rings</description>
 <gates>
 <gate name="G$1" symbol="CONN_02" x="0" y="0"/>

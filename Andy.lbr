@@ -895,43 +895,43 @@
 </package>
 <package name="ANDY_STEAKCONN-3PIN">
 <wire x1="0" y1="3" x2="0" y2="-3" width="0.127" layer="51"/>
-<wire x1="0" y1="-3" x2="-5.196153125" y2="0" width="0.127" layer="51"/>
-<wire x1="-5.196153125" y1="0" x2="0" y2="3" width="0.127" layer="51"/>
-<smd name="DATA" x="-1.292946875" y="-1.832975" dx="1.27" dy="0.635" layer="1" rot="R150" stop="no" cream="no"/>
-<smd name="GND" x="-4" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
-<smd name="VCC" x="-1" y="2" dx="1.27" dy="0.635" layer="1" rot="R30" stop="no" cream="no"/>
+<wire x1="0" y1="-3" x2="-2.656153125" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.656153125" y1="0" x2="0" y2="3" width="0.127" layer="51"/>
+<smd name="DATA" x="-0.302346875" y="-1.832975" dx="1.27" dy="0.635" layer="1" rot="R130" stop="no" cream="no"/>
+<smd name="GND" x="-2.095" y="0" dx="0.5" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="VCC" x="-0.365" y="1.9238" dx="1.27" dy="0.635" layer="1" rot="R50" stop="no" cream="no"/>
 <polygon width="0.127" layer="1">
-<vertex x="-3.5" y="-1"/>
-<vertex x="-5.196153125" y="0"/>
-<vertex x="-3.5" y="1"/>
+<vertex x="-1.722" y="-1"/>
+<vertex x="-2.656153125" y="0"/>
+<vertex x="-1.722" y="1"/>
 </polygon>
 <polygon width="0.127" layer="1">
 <vertex x="0" y="3"/>
-<vertex x="0" y="2"/>
-<vertex x="-1.524" y="1.143"/>
-<vertex x="-2.54" y="1.524"/>
+<vertex x="1.27" y="3.016"/>
+<vertex x="-0.6858" y="1.016"/>
+<vertex x="-1.2192" y="1.651"/>
 </polygon>
 <polygon width="0.127" layer="29">
-<vertex x="-3.4" y="-1.1"/>
-<vertex x="-5.3" y="0"/>
-<vertex x="-3.4" y="1.1"/>
+<vertex x="-1.749" y="-1.1"/>
+<vertex x="-2.76" y="0"/>
+<vertex x="-1.749" y="1.1"/>
 </polygon>
 <polygon width="0.127" layer="29">
-<vertex x="0" y="3.1"/>
-<vertex x="0" y="2"/>
-<vertex x="-1.524" y="1.143"/>
-<vertex x="-2.65" y="1.5"/>
+<vertex x="0" y="3.016"/>
+<vertex x="1.27" y="3.016"/>
+<vertex x="-0.7112" y="1.016"/>
+<vertex x="-1.2276" y="1.6524"/>
 </polygon>
 <polygon width="0.127" layer="1">
-<vertex x="-2.658971875" y="-1.46695"/>
-<vertex x="-1.792946875" y="-0.96695"/>
-<vertex x="0.016034375" y="-1.909075"/>
-<vertex x="0.01628125" y="-3.03025625"/>
+<vertex x="-1.185771875" y="-1.72095"/>
+<vertex x="-0.548346875" y="-1.09395"/>
+<vertex x="1.159034375" y="-3.052075"/>
+<vertex x="0.01628125" y="-3.052075"/>
 </polygon>
 <polygon width="0.127" layer="29">
-<vertex x="-2.745575" y="-1.51695"/>
-<vertex x="-1.792946875" y="-0.96695"/>
-<vertex x="0.016034375" y="-1.909075"/>
+<vertex x="-1.196175" y="-1.69475"/>
+<vertex x="-0.548346875" y="-1.11935"/>
+<vertex x="1.159034375" y="-3.052075"/>
 <vertex x="0.015865625" y="-3.06271875"/>
 </polygon>
 </package>
